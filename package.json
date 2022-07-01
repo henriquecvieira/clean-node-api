@@ -9,16 +9,6 @@
     "prepare": "husky install",
     "scriptname": "cmd"
   },
-  "lint-staged": {
-    "*.js": [
-      "standard --fix"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
