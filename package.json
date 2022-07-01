@@ -3,17 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "jest",
-    "prepare": "husky install",
-    "scriptname": "cmd"
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "jest": "^28.1.2",
     "lint-staged": "^13.0.3",
     "standard": "^17.0.0"
