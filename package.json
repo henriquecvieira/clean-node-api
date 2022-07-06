@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
-    "prepare": "husky install"   
-    
+    "prepare": "husky install",   
+    "pre-commit": "npx standardx --fix" 
   },
   "standard": {
     "env": [
