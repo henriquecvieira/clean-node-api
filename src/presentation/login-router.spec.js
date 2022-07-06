@@ -6,8 +6,11 @@ class LoginRouter {
       }
     }
     const { email, password } = httpRequest.body
-    if (!email || !password) {
+    if (!email) {
       return HttpResponse.badRequest('email')
+    }
+    if (!password) {
+      return HttpResponse.badRequest('password')
     }
   }
 }
