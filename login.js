@@ -44,6 +44,7 @@ class SignUpUseCase {
 // infra-layer
 // add-account-repo
 // import mongoose from 'mongoose'
+
 const AccountModel = mongoose.model('Account')
 class AddAccountRepository {
   async signUp (email, password, repeatPassword) {
@@ -53,3 +54,5 @@ class AddAccountRepository {
     }
   }
 }
+
+// teste para commit
