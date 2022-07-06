@@ -6,12 +6,17 @@ const Router = express.Router()
 module.exports = () => {
   const router = new SignUpRouter()
   Router.post('/signup', ExpressRouterAdapter.adapt(router))
+  // o express espera uma função assincrona que recebe um request e uma response
 }
 
 class ExpressRouterAdapter {
   static adapt (router) {
     return async (req, res) => {
-
+      const httpRequest = {
+        body: req.body
+      }
+      const httpResponse = router.route(httpRequest)
+      res.status(httpResponse.statusCode).json(httpResponse.body)
     }
   }
 }
@@ -26,7 +31,8 @@ class SignUpRouter {
     }
   }
 }
-
+// domain
+// signup-usecase
 class SignUpUseCase {
   async signUp (email, password, repeatPassword) {
     if (password === repeatPassword) {
@@ -35,7 +41,9 @@ class SignUpUseCase {
     }
   }
 }
-
+// infra-layer
+// add-account-repo
+// import mongoose from 'mongoose'
 const AccountModel = mongoose.model('Account')
 class AddAccountRepository {
   async signUp (email, password, repeatPassword) {
