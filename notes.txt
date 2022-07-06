@@ -1,3 +1,5 @@
 ##husky
 npm install husky --save-dev
 
+Router.post('/signup', ExpressRouterAdapter.adapt(router))
+  // o express espera uma função assincrona que recebe um request e uma response

@@ -49,7 +49,7 @@ const AccountModel = mongoose.model('Account')
 class AddAccountRepository {
   async signUp (email, password, repeatPassword) {
     if (password === repeatPassword) {
-      const user = await AccountModel.create({email, password })
+      const user = await AccountModel.create({ email, password })
       return user
     }
   }

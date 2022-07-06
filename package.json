@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "prepare": "husky install",
-    "pre-commit": "npx standardx --fix"
+    "test": "jest --watchAll",
+    "prepare": "husky install"   
+    
   },
   "standard": {
     "env": [
