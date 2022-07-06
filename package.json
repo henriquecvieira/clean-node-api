@@ -8,6 +8,9 @@
     "prepare": "husky install",
     "pre-commit": "npx standardx --fix"
   },
+  "standard": {
+    "env": ["jest"]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
