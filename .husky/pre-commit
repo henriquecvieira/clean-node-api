@@ -3,3 +3,4 @@
 
 npx standard --fix
 
+npm test
