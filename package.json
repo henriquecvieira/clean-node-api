@@ -2,7 +2,8 @@
   "name": "clean-node-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "login.js",
+  
   "scripts": {
     "test": "jest --watchAll",
     "prepare": "husky install",   
